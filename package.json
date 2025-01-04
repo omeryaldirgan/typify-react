@@ -1,10 +1,10 @@
 {
   "name": "typify-react",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "A simple React hook for creating typewriter text effects in your React applications.",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",         
+  "module": "dist/esm/index.js",       
+  "types": "dist/cjs/index.d.ts",
   "keywords": [
     "react",
     "hook",
@@ -23,11 +23,12 @@
   "bugs": {
     "url": "https://github.com/omeryaldirgan/typify-react/issues"
   },
-  "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build",
-    "test": "echo \"No test specified\" && exit 0"
-  },
+ "scripts": {
+  "build:cjs": "tsc --project tsconfig.json",         
+  "build:esm": "tsc --project tsconfig.esm.json",    
+  "build": "npm run build:cjs && npm run build:esm", 
+  "prepare": "npm run build"                          
+},
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
