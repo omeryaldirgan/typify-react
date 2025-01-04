@@ -1,6 +1,6 @@
 {
   "name": "typify-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple React hook for creating typewriter text effects in your React applications.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

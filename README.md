@@ -117,7 +117,7 @@ Want to contribute? Follow these steps:
 3. Run the dev server:
 
     ```bash
-    npm run dev
+    npm run start
     ```
 
 
